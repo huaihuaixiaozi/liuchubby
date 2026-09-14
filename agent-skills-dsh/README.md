@@ -4,12 +4,13 @@
 技能包与 8 条生命周期斜杠命令分发。由 <a href="https://github.com/addyosmani/agent-skills">addyosmani/agent-skills</a>
 转换而来。</p>
 
-DeepSeek Harness 插件。官方 bundle 形态，安装：
+DeepSeek Harness 插件。标准 bundle 形态，安装（本包位于仓库子目录
+`agent-skills-dsh/`，spec 需带 `#path:/agent-skills-dsh`）：
 
 ```sh
-dsh plugin --profile web add github:huaihuaixiaozi/liuchubby
+dsh plugin --profile web add github:huaihuaixiaozi/liuchubby#path:/agent-skills-dsh
 # 或本地目录 / tarball
-dsh plugin --profile web add ./dsh-agent-skills
+dsh plugin --profile web add ./agent-skills-dsh
 ```
 
 装完**重启 web**。技能通过 `dsh.skills` 声明随包分发，8 条命令由
