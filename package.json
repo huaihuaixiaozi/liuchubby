@@ -1,0 +1,69 @@
+{
+  "name": "dsh-agent-skills",
+  "version": "0.6.7",
+  "description": "24 production-grade engineering skills + 4 review personas, packaged as DeepSeek Harness skills with eight lifecycle slash commands.",
+  "type": "module",
+  "main": "./index.mjs",
+  "scripts": {
+    "smoke": "node scripts/smoke.mjs",
+    "test": "node scripts/smoke.mjs"
+  },
+  "exports": {
+    ".": "./index.mjs",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.mjs",
+    "cordis.patch.yml",
+    "skills/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huaihuaixiaozi/liuchubby.git"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "skills": [
+      "./skills/api-and-interface-design/SKILL.md",
+      "./skills/browser-testing-with-devtools/SKILL.md",
+      "./skills/ci-cd-and-automation/SKILL.md",
+      "./skills/code-review-and-quality/SKILL.md",
+      "./skills/code-reviewer/SKILL.md",
+      "./skills/code-simplification/SKILL.md",
+      "./skills/context-engineering/SKILL.md",
+      "./skills/debugging-and-error-recovery/SKILL.md",
+      "./skills/deprecation-and-migration/SKILL.md",
+      "./skills/documentation-and-adrs/SKILL.md",
+      "./skills/doubt-driven-development/SKILL.md",
+      "./skills/frontend-ui-engineering/SKILL.md",
+      "./skills/git-workflow-and-versioning/SKILL.md",
+      "./skills/idea-refine/SKILL.md",
+      "./skills/incremental-implementation/SKILL.md",
+      "./skills/interview-me/SKILL.md",
+      "./skills/observability-and-instrumentation/SKILL.md",
+      "./skills/performance-optimization/SKILL.md",
+      "./skills/planning-and-task-breakdown/SKILL.md",
+      "./skills/security-and-hardening/SKILL.md",
+      "./skills/security-auditor/SKILL.md",
+      "./skills/shipping-and-launch/SKILL.md",
+      "./skills/source-driven-development/SKILL.md",
+      "./skills/spec-driven-development/SKILL.md",
+      "./skills/test-driven-development/SKILL.md",
+      "./skills/test-engineer/SKILL.md",
+      "./skills/using-agent-skills/SKILL.md",
+      "./skills/web-performance-auditor/SKILL.md"
+    ]
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "skill",
+    "skills",
+    "agents",
+    "coding-agent"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,6 @@
+# Composite layer for the dsh-agent-skills bundle: mount the Node entry that
+# registers the eight lifecycle slash commands. Skills are declared separately
+# in package.json#dsh.skills and need no loader row.
+- insert:
+    - id: agent-skills-commands
+      name: dsh-agent-skills
